@@ -1,6 +1,6 @@
 # Israel area
 
-This project is configured to download/prepare/build a complete Pelias installation for Israel.
+This project is configured to download/prepare/build a complete Pelias installation for Jerusalem City.
 
 # Setup
 
