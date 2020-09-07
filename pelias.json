@@ -1,0 +1,92 @@
+{
+  "logger": {
+    "level": "debug",
+    "timestamp": false
+  },
+  "esclient": {
+    "apiVersion": "7.5",
+    "hosts": [{ "host": "elasticsearch" }]
+  },
+  "elasticsearch": {
+    "settings": {
+      "index": {
+        "refresh_interval": "10s",
+        "number_of_replicas": "0",
+        "number_of_shards": "1"
+      }
+    }
+  },
+  "api": {
+    "services": {
+      "pip": { "url": "http://pip:4200" },
+      "libpostal": { "url": "http://libpostal:4400" },
+      "placeholder": { "url": "http://placeholder:4100" },
+      "interpolation": { "url": "http://interpolation:4300" }
+    },
+    "defaultParameters": {
+      "focus.point.lat": 31.3,
+      "focus.point.lon": 35.45
+    },
+    "targets": {
+      "auto_discover": true,
+      "jerumuni": ["locality"]
+    }
+  },
+  "imports": {
+    "adminLookup": {
+      "enabled": true
+    },
+    "geonames": {
+      "datapath": "/data/geonames",
+      "countryCode": "IL"
+    },
+    "openstreetmap": {
+      "download": [
+        {
+          "sourceURL": "http://download.geofabrik.de/asia/israel-and-palestine-latest.osm.pbf"
+        }
+      ],
+      "leveldbpath": "/tmp",
+      "datapath": "/data/openstreetmap",
+      "import": [
+        {
+          "filename": "israel-and-palestine-latest.osm.pbf"
+        }
+      ]
+    },
+    "polyline": {
+      "datapath": "/data/polylines",
+      "files": ["extract.0sv"]
+    },
+    "whosonfirst": {
+      "datapath": "/data/whosonfirst",
+      "importPostalcodes": true,
+      "countryCode": "IL",
+      "importPlace": [
+        "85907155",
+        "85672551",
+        "1125955239",
+        "85672535",
+        "85632315",
+        "85903143",
+        "85907155"
+      ]
+    },
+    "csv": {
+      "datapath": "/data/csvs"
+    },
+    "transit": {
+      "datapath": "/data/transit",
+      "feeds": [
+        {
+          "layerId": "stops",
+          "url": "ftp://gtfs.mot.gov.il/israel-public-transportation.zip",
+          "filename": "stops.txt",
+          "agencyId": "TRIMET",
+          "agencyName": "TriMet",
+          "layerName": "stops"
+        }
+      ]
+    }
+  }
+}
