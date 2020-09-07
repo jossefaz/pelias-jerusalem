@@ -1,5 +1,5 @@
 data/*
 !data/csv/
 data/csv/*
-!data/csv/adress-sample.csv
+!data/csv/adress.csv
 blacklist/*
