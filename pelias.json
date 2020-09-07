@@ -73,7 +73,7 @@
       ]
     },
     "csv": {
-      "datapath": "/data/csvs"
+      "datapath": "/data/csv"
     },
     "transit": {
       "datapath": "/data/transit",

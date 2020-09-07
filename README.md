@@ -2,6 +2,8 @@
 
 This project is configured to download/prepare/build a complete Pelias installation for Jerusalem City.
 
+The Geocode csv is under copyright for that moment (only a sample of it is contained in this repository under data/csv/adress.csv), then if you would use it, you should ask for a copy of it from the municipality of Jerusalem.
+
 # Setup
 
 Please refer to the instructions at <https://github.com/pelias/docker> in order to install and configure your docker environment.
