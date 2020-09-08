@@ -28,8 +28,41 @@
       "focus.point.lon": 35.45
     },
     "targets": {
-      "auto_discover": true,
-      "jerumuni": ["locality"]
+      "auto_discover": false,
+      "canonical_sources": [
+        "whosonfirst",
+        "openstreetmap",
+        "openaddresses",
+        "geonames",
+        "jerumuni"
+      ],
+      "openstreetmap": ["address", "venue", "street"],
+      "whosonfirst": [
+        "continent",
+        "empire",
+        "country",
+        "dependency",
+        "macroregion",
+        "region",
+        "locality",
+        "localadmin",
+        "macrocounty",
+        "county",
+        "macrohood",
+        "borough",
+        "neighbourhood",
+        "microhood",
+        "disputed",
+        "venue",
+        "postalcode",
+        "continent",
+        "ocean",
+        "marinearea"
+      ],
+      "jerumuni": ["custom"]
+    },
+    "autocomplete": {
+      "exclude_address_length": 1
     }
   },
   "imports": {
