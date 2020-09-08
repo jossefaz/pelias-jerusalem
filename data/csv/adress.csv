@@ -1,4 +1,4 @@
-﻿id,housenumber,street_type,semel_bait,street,lon,lat,street_code,layer,source
+﻿id,housenumber,street_type,house_symbol,street,lon,lat,street_code,layer,source
 201256,3,118,4393 3,שד האוניברסיטה,222343,633952,4393,custom,jerumuni
 201257,1,118,4393 1,שד האוניברסיטה,222311,633950,4393,custom,jerumuni
 201258,621,99,4360 621,קציר אהרון,222456,633931,4360,custom,jerumuni
