@@ -29,37 +29,24 @@
     },
     "targets": {
       "auto_discover": false,
+      "csv": ["street"],
       "canonical_sources": [
         "whosonfirst",
         "openstreetmap",
         "openaddresses",
         "geonames",
-        "jerumuni"
+        "csv"
       ],
       "openstreetmap": ["address", "venue", "street"],
       "whosonfirst": [
         "continent",
-        "empire",
         "country",
-        "dependency",
-        "macroregion",
         "region",
         "locality",
         "localadmin",
-        "macrocounty",
         "county",
-        "macrohood",
-        "borough",
-        "neighbourhood",
-        "microhood",
-        "disputed",
-        "venue",
-        "postalcode",
-        "continent",
-        "ocean",
-        "marinearea"
-      ],
-      "jerumuni": ["custom"]
+        "postalcode"
+      ]
     },
     "autocomplete": {
       "exclude_address_length": 1
