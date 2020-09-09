@@ -102,8 +102,8 @@
           "layerId": "stops",
           "url": "ftp://gtfs.mot.gov.il/israel-public-transportation.zip",
           "filename": "stops.txt",
-          "agencyId": "TRIMET",
-          "agencyName": "TriMet",
+          "agencyId": "MOT",
+          "agencyName": "Mot",
           "layerName": "stops"
         }
       ]
