@@ -28,7 +28,7 @@
       "focus.point.lon": 35.45
     },
     "targets": {
-      "auto_discover": false,
+      "auto_discover": true,
       "csv": ["street"],
       "canonical_sources": [
         "whosonfirst",
