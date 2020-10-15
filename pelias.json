@@ -29,24 +29,7 @@
     },
     "targets": {
       "auto_discover": true,
-      "csv": ["street"],
-      "canonical_sources": [
-        "whosonfirst",
-        "openstreetmap",
-        "openaddresses",
-        "geonames",
-        "csv"
-      ],
-      "openstreetmap": ["address", "venue", "street"],
-      "whosonfirst": [
-        "continent",
-        "country",
-        "region",
-        "locality",
-        "localadmin",
-        "county",
-        "postalcode"
-      ]
+      "jerumuni" : ["custom"]
     },
     "autocomplete": {
       "exclude_address_length": 1
